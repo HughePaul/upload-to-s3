@@ -1,8 +1,10 @@
 upload-to-s3
 ============
 
+This module and script synchronises a local directory (or checked out git repo) onto an S3 bucket.
+Files are uploaded to or deleted from the S3 bucket. files are never changed in the local directory.
 
-# CLI
+# Command-line Interface
 Install nodejs
 Clone out the upload-to-s3 Repo
 Install required modules:
@@ -26,6 +28,7 @@ Run the sync script:
 ```
 
 # AWS Permissions
+The following permissions are required as a minimum for the user performing a file sync:
 ```
 {
   "Version": "2012-10-17",
