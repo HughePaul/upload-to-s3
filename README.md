@@ -1,6 +1,31 @@
 upload-to-s3
 ============
 
+```
+
+# CLI
+Install nodejs
+Clone out the upload-to-s3 Repo
+Install required modules:
+```
+npm install
+```
+Create a config file in JSON format:
+```
+{
+	"directory": "/path/to/directory",
+	"bucket": "bucketname",
+	"accessKeyId": "AWSAccessKey",
+	"secretAccessKey": "AWSAccessSecret",
+	"region": "eu-west-1",
+	"ACL": "public-read"
+}
+```
+Run the sync script:
+```
+./upload-to-s3 config.json
+```
+
 # AWS Permissions
 ```
 {
@@ -22,12 +47,6 @@ upload-to-s3
     }
   ]
 }
-```
-
-# CLI
-```
-./upload-to-s3 config.json
-```
 
 # Initialisation
 ```javascript
