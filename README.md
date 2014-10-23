@@ -16,8 +16,8 @@ upload-to-s3
         "s3:PutObjectAcl"
       ],
       "Resource": [
-        "arn:aws:s3:::mc-kitti-website",
-        "arn:aws:s3:::mc-kitti-website/*"
+        "arn:aws:s3:::bucketname",
+        "arn:aws:s3:::bucketname/*"
       ]
     }
   ]
@@ -33,7 +33,7 @@ upload-to-s3
 ```javascript
 var config = {
 	"directory": "/path/to/directory",
-	"bucket": "bucket-name",
+	"bucket": "bucketname",
 	"accessKeyId": "AWSAccessKey",
 	"secretAccessKey": "AWSAccessSecret",
 	"region": "eu-west-1"
