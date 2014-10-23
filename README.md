@@ -1,7 +1,6 @@
 upload-to-s3
 ============
 
-```
 
 # CLI
 Install nodejs
@@ -47,7 +46,7 @@ Run the sync script:
     }
   ]
 }
-
+```
 # Initialisation
 ```javascript
 var config = {
