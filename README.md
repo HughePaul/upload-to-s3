@@ -74,12 +74,12 @@ uploadToS3.diffDir(function(err, files) {
 	console.log(files);
 });
 
-uploadToS3.bucketFiles(function(err, files) {
+uploadToS3.getBucketFiles(function(err, files) {
 	if (err) return console.error('Error:', err);
 	console.log(files);
 });
 
-uploadToS3.dirFiles(function(err, files) {
+uploadToS3.getDirFiles(function(err, files) {
 	if (err) return console.error('Error:', err);
 	console.log(files);
 });
