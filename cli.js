@@ -46,8 +46,8 @@ new UploadToS3(config)
 	console.log('Removing S3 file', filePath);
 })
 
-.on('upload', function(filePath) {
-	console.log('Uploading S3 file', filePath);
+.on('upload', function(filePath, contentType, size) {
+	console.log('Uploading S3 file', filePath, contentType, Math.round(size/1024)+'kb');
 })
 
 .syncDir(function(err) {

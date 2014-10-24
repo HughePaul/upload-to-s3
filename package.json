@@ -1,12 +1,13 @@
 {
-	"name": "gupload-to-s3",
-	"version": "0.0.1",
-	"description": "A package for syncing files in a local directory to an AWS S3 bucket",
-	"bugs": {
-		"url": "http://github.com/HughePaul/upload-to-s3/issues",
-		"email": "upload-to-s3@hughepaul.com"
-	},
-	"dependencies": {
-		"aws-sdk": "^2.0.21"
-	}
+  "name": "gupload-to-s3",
+  "version": "0.0.1",
+  "description": "A package for syncing files in a local directory to an AWS S3 bucket",
+  "bugs": {
+    "url": "http://github.com/HughePaul/upload-to-s3/issues",
+    "email": "upload-to-s3@hughepaul.com"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.0.21",
+    "mmmagic": "^0.3.11"
+  }
 }
