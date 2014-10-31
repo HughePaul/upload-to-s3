@@ -2,7 +2,7 @@ upload-to-s3
 ============
 
 This module and script synchronises a local directory (or checked out git repo) onto an S3 bucket.
-Files are uploaded to or deleted from the S3 bucket. files are never changed in the local directory.
+Files are uploaded to or deleted from the S3 bucket. files are never changed in the local directory, unless downloadDir() is called.
 
 # Installation
 Install nodejs from http://nodejs.org/download/, clone out the upload-to-s3 Repo, and install required modules:
@@ -87,6 +87,10 @@ uploadToS3.on('remove', function(filePath) {
 uploadToS3.on('upload', function(filePath) {
 	console.log('Uploading S3 file', filePath);
 });
+
+uploadToS3.on('download', function(filePath) {
+	console.log('Downloading S3 file', filePath);
+});
 ```
 
 # Methods
@@ -108,6 +112,14 @@ uploadToS3.getDirFiles(function(err, files) {
 });
 
 uploadToS3.syncDir(function(err) {
+	if (err) return console.error('Error:', err);
+});
+
+uploadToS3.uploadDir(function(err) {
+	if (err) return console.error('Error:', err);
+});
+
+uploadToS3.downloadDir(function(err) {
 	if (err) return console.error('Error:', err);
 });
 
