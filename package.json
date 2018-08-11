@@ -1,5 +1,5 @@
 {
-  "name": "gupload-to-s3",
+  "name": "upload-to-s3",
   "version": "0.0.1",
   "description": "A package for syncing files in a local directory to an AWS S3 bucket",
   "bugs": {
