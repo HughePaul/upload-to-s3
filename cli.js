@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var UploadToS3 = require('./lib/uploadtos3');
 
 var fs = require('fs');

@@ -13,7 +13,7 @@
   },
   "main": "index.js",
   "bin": {
-    "sync-to-s3": "./sync-to-s3"
+    "sync-to-s3": "./cli.js"
   },
   "scripts": {
     "test": "true"

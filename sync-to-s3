@@ -1,3 +1,0 @@
-#!/bin/bash
-
-"$(which nodejs node)" "$(dirname "$0")/cli.js" $@
