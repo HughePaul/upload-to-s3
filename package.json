@@ -10,5 +10,22 @@
     "aws-sdk": "^2.0.21",
     "mmmagic": "^0.3.11",
     "mkdirp": "^0.5.0"
-  }
+  },
+  "main": "index.js",
+  "bin": {
+    "upload-to-s3": "./upload-to-s3"
+  },
+  "scripts": {
+    "test": "true"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HughePaul/upload-to-s3.git"
+  },
+  "author": "HughePaul",
+  "license": "MIT",
+  "homepage": "https://github.com/HughePaul/upload-to-s3#readme"
 }
